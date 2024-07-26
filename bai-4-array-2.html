@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 4</title>
+</head>
+<body>
+
+</body>
+<script>
+    let sentence = "Đếm số từ trong câu này a b";
+
+    function countWords(str) {
+        str = str.trim();
+        if (str.length === 0) {
+            return 0;
+        }
+        // Tách chuỗi thành các từ bằng cách sử dụng khoảng trắng làm phân cách
+        let words = str.split(/\s+/);
+        // Trả về số lượng từ
+        return words.length;
+    }
+    document.write("Số từ trong chuỗi là: "+ countWords(sentence));
+
+</script>
+</html>
